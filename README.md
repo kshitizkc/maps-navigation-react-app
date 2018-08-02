@@ -1,2 +1,2 @@
-### A simple React/Redux app
-##### It consumes Google map and Shipwell APIs
+### A simple React/Redux app for Shipwell Interview
+##### Consumes Google map, Shipwell APIs
