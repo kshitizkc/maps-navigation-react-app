@@ -1,2 +1,3 @@
 export const FETCH_USER = 'FETCH_USER';
-export const NEW_ADDRESS = 'NEW_ADDRESS ';
+export const NEW_TO_ADDRESS = 'NEW_TO_ADDRESS';
+export const NEW_FROM_ADDRESS = 'NEW_FROM_ADDRESS';
