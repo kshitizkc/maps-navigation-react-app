@@ -17,19 +17,13 @@ class ValidateAddress extends Component {
     this.props.fetchUser();
   }
 
-  /** Same technique can be used to display errors */
+  /** Silimar technique can be used to display errors */
   displayWarnings(toAddressWarnings = [], fromAddressWarnings = []) {
     const warnings = [...toAddressWarnings, ...fromAddressWarnings];
     return (
       <div>
-        {warnings.length ? "Warnings" : ""}
-        <ul>
-          {warnings.map((warning, _id) => (
-            <li key={_id}>
-              <h4>{warning}</h4>
-            </li>
-          ))}
-        </ul>
+        <h4>{warnings.length ? "Warnings: " : ""}</h4>
+        {warnings.map((warning, _id) => <div key={_id}>{warning}</div>)}
       </div>
     );
   }
@@ -43,11 +37,13 @@ class ValidateAddress extends Component {
 
     return (
       <div>
-        {displayWarning}
         <ValidateAddressForm
           addToAddress={this.props.addToAddress}
           addFromAddress={this.props.addFromAddress}
         />
+        <br />
+        <br />
+        {displayWarning}
       </div>
     );
   }

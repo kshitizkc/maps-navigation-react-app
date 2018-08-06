@@ -39,6 +39,7 @@ class ValidateAddressForm extends Component {
   render() {
     return (
       <div className="page-form">
+        <h1>Shipwell Application for Directions</h1>
         <form onSubmit={this.onSubmitToAddress}>
           <label>To: </label>
           <input
