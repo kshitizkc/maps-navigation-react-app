@@ -1,2 +1,2 @@
-### A simple React/Redux app for Shipwell Interview
+### A React/Redux app for Navigation using Google Maps
 ##### Consumes Google map, Shipwell APIs
